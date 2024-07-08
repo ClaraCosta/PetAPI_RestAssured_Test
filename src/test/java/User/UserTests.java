@@ -14,6 +14,8 @@ import org.junit.jupiter.api.*;
 
 import static io.restassured.RestAssured.given;
 import static io.restassured.config.LogConfig.logConfig;
+import static io.restassured.module.jsv.JsonSchemaValidator.matchesJsonSchemaInClasspath;
+import static org.hamcrest.Matchers.*;
 
 //Permite setar a ordem dos testes a partir da tag de ordem
 //As tags que não possuem essa tag são executadas de forma sem prioridade
@@ -56,6 +58,33 @@ public class UserTests {
     @Test
     public void CreateNewUser_WithValidData_ReturnOk(){
 
+        request
+                .body(user)
+                .when()
+                .post("/user")
+                .then()
+                .assertThat().statusCode(200).and()
+                .body("code", equalTo(200))
+                .body("type", equalTo("unknown"))
+                .body("message", isA(String.class))
+                .body("size()", equalTo(3));
+
+
+    }
+
+
+    @Test
+    public void GetLogin_ValidUser_ReturnOk(){
+        request
+                .param("username", user.getUsername())
+                .param("password", user.getPassword())
+                .when()
+                .get("/user/login")
+                .then()
+                .assertThat()
+                .statusCode(200)
+                .and().time(lessThan(2000L))
+                .and().body(matchesJsonSchemaInClasspath("loginResponseSchema.json"));
     }
 
 }
