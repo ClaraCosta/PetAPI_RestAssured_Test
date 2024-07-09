@@ -5,8 +5,8 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="c7101980-2dff-453a-b115-45267d97ba74" name="Changes" comment="">
-      <change afterPath="$PROJECT_DIR$/src/test/resources/loginResponseSchema.json" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/README.md" beforeDir="false" afterPath="$PROJECT_DIR$/README.md" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/test/java/User/UserTests.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/User/UserTests.java" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
@@ -30,12 +30,12 @@
     &quot;assignee&quot;: &quot;ClaraCosta&quot;
   }
 }</component>
-  <component name="GithubPullRequestsUISettings">{
-  &quot;selectedUrlAndAccountId&quot;: {
-    &quot;url&quot;: &quot;https://github.com/ClaraCosta/PetAPI_RestAssured_Test.git&quot;,
-    &quot;accountId&quot;: &quot;8cb73d32-f656-466a-bbd8-4dc2e9810e36&quot;
+  <component name="GithubPullRequestsUISettings"><![CDATA[{
+  "selectedUrlAndAccountId": {
+    "url": "https://github.com/ClaraCosta/PetAPI_RestAssured_Test.git",
+    "accountId": "50be7e12-c063-450d-9b3f-fc7443bd4960"
   }
-}</component>
+}]]></component>
   <component name="ProblemsViewState">
     <option name="selectedTabId" value="CurrentFile" />
   </component>
@@ -53,15 +53,18 @@
     "Application.Main.executor": "Run",
     "JUnit.UserTests.CreateNewUser_WithValidData_ReturnOk.executor": "Run",
     "JUnit.UserTests.GetLogin_ValidUser_ReturnOk.executor": "Run",
+    "JUnit.UserTests.executor": "Run",
     "RunOnceActivity.ShowReadmeOnStart": "true",
+    "full.screen.before.presentation.mode": "false",
     "git-widget-placeholder": "main",
     "ignore.virus.scanning.warn.message": "true",
     "kotlin-language-version-configured": "true",
+    "last_opened_file_path": "C:/Users/Clara/IdeaProjects/PetAPI_RestAssured_Test",
     "onboarding.tips.debug.path": "C:/Users/Clara/IdeaProjects/PetAPI_RestAssured_Test/src/main/java/org/example/Main.java",
     "project.structure.last.edited": "Modules",
     "project.structure.proportion": "0.15",
     "project.structure.side.proportion": "0.2",
-    "settings.editor.selected.configurable": "editor.preferences.tabs"
+    "settings.editor.selected.configurable": "preferences.editor"
   }
 }]]></component>
   <component name="RunManager" selected="JUnit.UserTests">

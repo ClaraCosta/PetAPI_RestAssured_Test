@@ -87,5 +87,15 @@ public class UserTests {
                 .and().body(matchesJsonSchemaInClasspath("loginResponseSchema.json"));
     }
 
+    public void GetUserByUsername_userIsValid_return200(){
+
+        request
+                .when()
+                .get("/user/" + user.getUsername())
+                .then()
+                .assertThat().statusCode(200).and().time(lessThan(2000L))
+                .and().body("firstName", equalTo(user.getFirstName()));
+    }
+
 }
 
