@@ -73,9 +73,27 @@ public class UserTests {
 
     }
 
-
     @Test
     @Order(2)
+    public void UpdateUser_WithValidData_ReturnOk(){
+
+        request
+                .body(user)
+                .when()
+                .put("/user/:username")
+                .then()
+                .assertThat().statusCode(200).and()
+                .body("code", equalTo(200))
+                .body("type", equalTo("unknown"))
+                .body("message", isA(String.class))
+                .body("size()", equalTo(3));
+
+
+    }
+
+
+    @Test
+    @Order(3)
     public void GetLogin_ValidUser_ReturnOk(){
         request
                 .param("username", user.getUsername())
@@ -102,7 +120,7 @@ public class UserTests {
     }
 
     @Test
-    @Order(3)
+    @Order(4)
     public void DeleteUser_UserExists_Return200(){
 
         request

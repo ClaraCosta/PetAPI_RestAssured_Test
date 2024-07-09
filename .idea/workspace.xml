@@ -6,20 +6,12 @@
   <component name="ChangeListManager">
     <list default="true" id="c7101980-2dff-453a-b115-45267d97ba74" name="Changes" comment="">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/README.md" beforeDir="false" afterPath="$PROJECT_DIR$/README.md" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/test/java/User/UserTests.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/User/UserTests.java" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
     <option name="LAST_RESOLUTION" value="IGNORE" />
-  </component>
-  <component name="FileTemplateManagerImpl">
-    <option name="RECENT_TEMPLATES">
-      <list>
-        <option value="Class" />
-      </list>
-    </option>
   </component>
   <component name="Git.Settings">
     <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
@@ -33,7 +25,7 @@
   <component name="GithubPullRequestsUISettings">{
   &quot;selectedUrlAndAccountId&quot;: {
     &quot;url&quot;: &quot;https://github.com/ClaraCosta/PetAPI_RestAssured_Test.git&quot;,
-    &quot;accountId&quot;: &quot;50be7e12-c063-450d-9b3f-fc7443bd4960&quot;
+    &quot;accountId&quot;: &quot;a1fb27b6-acf1-43ac-8901-d24ffd61c58d&quot;
   }
 }</component>
   <component name="ProblemsViewState">
@@ -48,26 +40,21 @@
     <option name="hideEmptyMiddlePackages" value="true" />
     <option name="showLibraryContents" value="true" />
   </component>
-  <component name="PropertiesComponent">{
-  &quot;keyToString&quot;: {
-    &quot;Application.Main.executor&quot;: &quot;Run&quot;,
-    &quot;JUnit.UserTests.CreateNewUser_WithValidData_ReturnOk.executor&quot;: &quot;Run&quot;,
-    &quot;JUnit.UserTests.GetLogin_ValidUser_ReturnOk.executor&quot;: &quot;Run&quot;,
-    &quot;JUnit.UserTests.executor&quot;: &quot;Run&quot;,
-    &quot;RunOnceActivity.ShowReadmeOnStart&quot;: &quot;true&quot;,
-    &quot;full.screen.before.presentation.mode&quot;: &quot;false&quot;,
-    &quot;git-widget-placeholder&quot;: &quot;main&quot;,
-    &quot;ignore.virus.scanning.warn.message&quot;: &quot;true&quot;,
-    &quot;kotlin-language-version-configured&quot;: &quot;true&quot;,
-    &quot;last_opened_file_path&quot;: &quot;C:/Users/Clara/IdeaProjects/PetAPI_RestAssured_Test&quot;,
-    &quot;onboarding.tips.debug.path&quot;: &quot;C:/Users/Clara/IdeaProjects/PetAPI_RestAssured_Test/src/main/java/org/example/Main.java&quot;,
-    &quot;project.structure.last.edited&quot;: &quot;Modules&quot;,
-    &quot;project.structure.proportion&quot;: &quot;0.15&quot;,
-    &quot;project.structure.side.proportion&quot;: &quot;0.2&quot;,
-    &quot;settings.editor.selected.configurable&quot;: &quot;editor.preferences.tabs&quot;
+  <component name="PropertiesComponent"><![CDATA[{
+  "keyToString": {
+    "Application.Main.executor": "Run",
+    "JUnit.UserTests.executor": "Run",
+    "RunOnceActivity.ShowReadmeOnStart": "true",
+    "git-widget-placeholder": "main",
+    "ignore.virus.scanning.warn.message": "true",
+    "kotlin-language-version-configured": "true",
+    "onboarding.tips.debug.path": "C:/Users/Clara/IdeaProjects/PetAPI_RestAssured_Test/src/main/java/org/example/Main.java",
+    "project.structure.last.edited": "Modules",
+    "project.structure.proportion": "0.15",
+    "project.structure.side.proportion": "0.2"
   }
-}</component>
-  <component name="RunManager" selected="JUnit.UserTests">
+}]]></component>
+  <component name="RunManager">
     <configuration name="UserTests" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
       <module name="PetAPI_RestAssured_Test" />
       <extension name="coverage">
@@ -83,43 +70,9 @@
         <option name="Make" enabled="true" />
       </method>
     </configuration>
-    <configuration name="UserTests.CreateNewUser_WithValidData_ReturnOk" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
-      <module name="PetAPI_RestAssured_Test" />
-      <extension name="coverage">
-        <pattern>
-          <option name="PATTERN" value="User.*" />
-          <option name="ENABLED" value="true" />
-        </pattern>
-      </extension>
-      <option name="PACKAGE_NAME" value="User" />
-      <option name="MAIN_CLASS_NAME" value="User.UserTests" />
-      <option name="METHOD_NAME" value="CreateNewUser_WithValidData_ReturnOk" />
-      <option name="TEST_OBJECT" value="method" />
-      <method v="2">
-        <option name="Make" enabled="true" />
-      </method>
-    </configuration>
-    <configuration name="UserTests.GetLogin_ValidUser_ReturnOk" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
-      <module name="PetAPI_RestAssured_Test" />
-      <extension name="coverage">
-        <pattern>
-          <option name="PATTERN" value="User.*" />
-          <option name="ENABLED" value="true" />
-        </pattern>
-      </extension>
-      <option name="PACKAGE_NAME" value="User" />
-      <option name="MAIN_CLASS_NAME" value="User.UserTests" />
-      <option name="METHOD_NAME" value="GetLogin_ValidUser_ReturnOk" />
-      <option name="TEST_OBJECT" value="method" />
-      <method v="2">
-        <option name="Make" enabled="true" />
-      </method>
-    </configuration>
     <recent_temporary>
       <list>
         <item itemvalue="JUnit.UserTests" />
-        <item itemvalue="JUnit.UserTests.GetLogin_ValidUser_ReturnOk" />
-        <item itemvalue="JUnit.UserTests.CreateNewUser_WithValidData_ReturnOk" />
       </list>
     </recent_temporary>
   </component>
