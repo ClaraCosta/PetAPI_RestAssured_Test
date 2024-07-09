@@ -56,6 +56,7 @@ public class UserTests {
     }
 
     @Test
+    @Order(1)
     public void CreateNewUser_WithValidData_ReturnOk(){
 
         request
@@ -74,6 +75,7 @@ public class UserTests {
 
 
     @Test
+    @Order(2)
     public void GetLogin_ValidUser_ReturnOk(){
         request
                 .param("username", user.getUsername())
@@ -95,6 +97,21 @@ public class UserTests {
                 .then()
                 .assertThat().statusCode(200).and().time(lessThan(2000L))
                 .and().body("firstName", equalTo(user.getFirstName()));
+
+        // TO DO: Schema Validation
+    }
+
+    @Test
+    @Order(3)
+    public void DeleteUser_UserExists_Return200(){
+
+        request
+                .when()
+                .delete("/user/" + user.getUsername())
+                .then()
+                .assertThat().statusCode(200).and().time(lessThan(2000L))
+                .log();
+
     }
 
 }

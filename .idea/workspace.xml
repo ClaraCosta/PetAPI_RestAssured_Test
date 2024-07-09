@@ -30,12 +30,12 @@
     &quot;assignee&quot;: &quot;ClaraCosta&quot;
   }
 }</component>
-  <component name="GithubPullRequestsUISettings"><![CDATA[{
-  "selectedUrlAndAccountId": {
-    "url": "https://github.com/ClaraCosta/PetAPI_RestAssured_Test.git",
-    "accountId": "50be7e12-c063-450d-9b3f-fc7443bd4960"
+  <component name="GithubPullRequestsUISettings">{
+  &quot;selectedUrlAndAccountId&quot;: {
+    &quot;url&quot;: &quot;https://github.com/ClaraCosta/PetAPI_RestAssured_Test.git&quot;,
+    &quot;accountId&quot;: &quot;50be7e12-c063-450d-9b3f-fc7443bd4960&quot;
   }
-}]]></component>
+}</component>
   <component name="ProblemsViewState">
     <option name="selectedTabId" value="CurrentFile" />
   </component>
@@ -48,25 +48,25 @@
     <option name="hideEmptyMiddlePackages" value="true" />
     <option name="showLibraryContents" value="true" />
   </component>
-  <component name="PropertiesComponent"><![CDATA[{
-  "keyToString": {
-    "Application.Main.executor": "Run",
-    "JUnit.UserTests.CreateNewUser_WithValidData_ReturnOk.executor": "Run",
-    "JUnit.UserTests.GetLogin_ValidUser_ReturnOk.executor": "Run",
-    "JUnit.UserTests.executor": "Run",
-    "RunOnceActivity.ShowReadmeOnStart": "true",
-    "full.screen.before.presentation.mode": "false",
-    "git-widget-placeholder": "main",
-    "ignore.virus.scanning.warn.message": "true",
-    "kotlin-language-version-configured": "true",
-    "last_opened_file_path": "C:/Users/Clara/IdeaProjects/PetAPI_RestAssured_Test",
-    "onboarding.tips.debug.path": "C:/Users/Clara/IdeaProjects/PetAPI_RestAssured_Test/src/main/java/org/example/Main.java",
-    "project.structure.last.edited": "Modules",
-    "project.structure.proportion": "0.15",
-    "project.structure.side.proportion": "0.2",
-    "settings.editor.selected.configurable": "preferences.editor"
+  <component name="PropertiesComponent">{
+  &quot;keyToString&quot;: {
+    &quot;Application.Main.executor&quot;: &quot;Run&quot;,
+    &quot;JUnit.UserTests.CreateNewUser_WithValidData_ReturnOk.executor&quot;: &quot;Run&quot;,
+    &quot;JUnit.UserTests.GetLogin_ValidUser_ReturnOk.executor&quot;: &quot;Run&quot;,
+    &quot;JUnit.UserTests.executor&quot;: &quot;Run&quot;,
+    &quot;RunOnceActivity.ShowReadmeOnStart&quot;: &quot;true&quot;,
+    &quot;full.screen.before.presentation.mode&quot;: &quot;false&quot;,
+    &quot;git-widget-placeholder&quot;: &quot;main&quot;,
+    &quot;ignore.virus.scanning.warn.message&quot;: &quot;true&quot;,
+    &quot;kotlin-language-version-configured&quot;: &quot;true&quot;,
+    &quot;last_opened_file_path&quot;: &quot;C:/Users/Clara/IdeaProjects/PetAPI_RestAssured_Test&quot;,
+    &quot;onboarding.tips.debug.path&quot;: &quot;C:/Users/Clara/IdeaProjects/PetAPI_RestAssured_Test/src/main/java/org/example/Main.java&quot;,
+    &quot;project.structure.last.edited&quot;: &quot;Modules&quot;,
+    &quot;project.structure.proportion&quot;: &quot;0.15&quot;,
+    &quot;project.structure.side.proportion&quot;: &quot;0.2&quot;,
+    &quot;settings.editor.selected.configurable&quot;: &quot;editor.preferences.tabs&quot;
   }
-}]]></component>
+}</component>
   <component name="RunManager" selected="JUnit.UserTests">
     <configuration name="UserTests" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
       <module name="PetAPI_RestAssured_Test" />
