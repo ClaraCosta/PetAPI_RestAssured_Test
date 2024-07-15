@@ -5,14 +5,31 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="c7101980-2dff-453a-b115-45267d97ba74" name="Changes" comment="">
+      <change afterPath="$PROJECT_DIR$/.idea/uiDesigner.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/Entities/Pet.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/test/java/Pets/PetTests.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/shelf/Uncommitted_changes_before_Update_at_06_07_2024_20_48_[Changes]/shelved.patch" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/shelf/Uncommitted_changes_before_Update_at_06_07_2024_20_48__Changes_.xml" beforeDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/test/java/User/UserTests.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/User/UserTests.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/test/resources/loginResponseSchema.json" beforeDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
     <option name="LAST_RESOLUTION" value="IGNORE" />
   </component>
+<<<<<<< HEAD
+=======
+  <component name="FileTemplateManagerImpl">
+    <option name="RECENT_TEMPLATES">
+      <list>
+        <option value="Interface" />
+        <option value="Class" />
+      </list>
+    </option>
+  </component>
+>>>>>>> 91e1165 (adição das requisições para as operações dos PETs)
   <component name="Git.Settings">
     <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
   </component>
@@ -43,6 +60,7 @@
   <component name="PropertiesComponent"><![CDATA[{
   "keyToString": {
     "Application.Main.executor": "Run",
+<<<<<<< HEAD
     "JUnit.UserTests.executor": "Run",
     "RunOnceActivity.ShowReadmeOnStart": "true",
     "git-widget-placeholder": "main",
@@ -56,23 +74,124 @@
 }]]></component>
   <component name="RunManager">
     <configuration name="UserTests" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+=======
+    "JUnit.All in PetAPI_RestAssured_Test.executor": "Run",
+    "JUnit.PetTests.AddNewPetInStore_WithValidData_ReturnOk.executor": "Run",
+    "JUnit.PetTests.FindPetById_ReturnOk.executor": "Run",
+    "JUnit.PetTests.UpdateExistentPet.executor": "Run",
+    "JUnit.PetTests.UpdatePet_ReturnOk.executor": "Run",
+    "JUnit.PetTests.deletePet.executor": "Run",
+    "JUnit.PetTests.executor": "Run",
+    "JUnit.PetTests.findPet_ByStatus.executor": "Run",
+    "JUnit.UserTests.CreateNewUser_WithValidData_ReturnOk.executor": "Run",
+    "JUnit.UserTests.GetLogin_ValidUser_ReturnOk.executor": "Run",
+    "JUnit.UserTests.executor": "Run",
+    "RunOnceActivity.ShowReadmeOnStart": "true",
+    "SHARE_PROJECT_CONFIGURATION_FILES": "true",
+    "full.screen.before.presentation.mode": "false",
+    "git-widget-placeholder": "main",
+    "ignore.virus.scanning.warn.message": "true",
+    "kotlin-language-version-configured": "true",
+    "last_opened_file_path": "C:/Users/Clara/IdeaProjects/PetAPI_RestAssured_Test",
+    "onboarding.tips.debug.path": "C:/Users/Clara/IdeaProjects/PetAPI_RestAssured_Test/src/main/java/org/example/Main.java",
+    "project.structure.last.edited": "Modules",
+    "project.structure.proportion": "0.15",
+    "project.structure.side.proportion": "0.2",
+    "settings.editor.selected.configurable": "editor.preferences.tabs"
+  }
+}]]></component>
+  <component name="RecentsManager">
+    <key name="CreateClassDialog.RecentsKey">
+      <recent name="Pets" />
+    </key>
+  </component>
+  <component name="RunManager" selected="JUnit.All in PetAPI_RestAssured_Test">
+    <configuration name="All in PetAPI_RestAssured_Test" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+>>>>>>> 91e1165 (adição das requisições para as operações dos PETs)
+      <module name="PetAPI_RestAssured_Test" />
+      <option name="PACKAGE_NAME" value="" />
+      <option name="TEST_OBJECT" value="package" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+<<<<<<< HEAD
+    <recent_temporary>
+      <list>
+        <item itemvalue="JUnit.UserTests" />
+=======
+    <configuration name="PetTests.UpdateExistentPet" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
       <module name="PetAPI_RestAssured_Test" />
       <extension name="coverage">
         <pattern>
-          <option name="PATTERN" value="User.*" />
+          <option name="PATTERN" value="Pets.*" />
           <option name="ENABLED" value="true" />
         </pattern>
       </extension>
-      <option name="PACKAGE_NAME" value="User" />
-      <option name="MAIN_CLASS_NAME" value="User.UserTests" />
-      <option name="TEST_OBJECT" value="class" />
+      <option name="PACKAGE_NAME" value="Pets" />
+      <option name="MAIN_CLASS_NAME" value="Pets.PetTests" />
+      <option name="METHOD_NAME" value="UpdateExistentPet" />
+      <option name="TEST_OBJECT" value="method" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="PetTests.UpdatePet_ReturnOk" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+      <module name="PetAPI_RestAssured_Test" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="Pets.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <option name="PACKAGE_NAME" value="Pets" />
+      <option name="MAIN_CLASS_NAME" value="Pets.PetTests" />
+      <option name="METHOD_NAME" value="UpdatePet_ReturnOk" />
+      <option name="TEST_OBJECT" value="method" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="PetTests.deletePet" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+      <module name="PetAPI_RestAssured_Test" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="Pets.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <option name="PACKAGE_NAME" value="Pets" />
+      <option name="MAIN_CLASS_NAME" value="Pets.PetTests" />
+      <option name="METHOD_NAME" value="deletePet" />
+      <option name="TEST_OBJECT" value="method" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="PetTests.findPet_ByStatus" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+      <module name="PetAPI_RestAssured_Test" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="Pets.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <option name="PACKAGE_NAME" value="Pets" />
+      <option name="MAIN_CLASS_NAME" value="Pets.PetTests" />
+      <option name="METHOD_NAME" value="findPet_ByStatus" />
+      <option name="TEST_OBJECT" value="method" />
       <method v="2">
         <option name="Make" enabled="true" />
       </method>
     </configuration>
     <recent_temporary>
       <list>
-        <item itemvalue="JUnit.UserTests" />
+        <item itemvalue="JUnit.All in PetAPI_RestAssured_Test" />
+        <item itemvalue="JUnit.PetTests.findPet_ByStatus" />
+        <item itemvalue="JUnit.PetTests.deletePet" />
+        <item itemvalue="JUnit.PetTests.UpdateExistentPet" />
+        <item itemvalue="JUnit.PetTests.UpdatePet_ReturnOk" />
+>>>>>>> 91e1165 (adição das requisições para as operações dos PETs)
       </list>
     </recent_temporary>
   </component>
@@ -109,5 +228,25 @@
         </entry>
       </map>
     </option>
+  </component>
+  <component name="XDebuggerManager">
+    <breakpoint-manager>
+      <breakpoints>
+        <line-breakpoint enabled="true" type="java-method">
+          <url>file://$PROJECT_DIR$/src/test/java/User/UserTests.java</url>
+          <line>96</line>
+          <properties class="User.UserTests" method="GetLogin_ValidUser_ReturnOk">
+            <option name="EMULATED" value="true" />
+            <option name="WATCH_EXIT" value="false" />
+          </properties>
+          <option name="timeStamp" value="4" />
+        </line-breakpoint>
+      </breakpoints>
+    </breakpoint-manager>
+  </component>
+  <component name="com.intellij.coverage.CoverageDataManagerImpl">
+    <SUITE FILE_PATH="coverage/PetAPI_RestAssured_Test$PetTests_AddNewPetInStore_WithValidData_ReturnOk.ic" NAME="PetTests.AddNewPetInStore_WithValidData_ReturnOk Coverage Results" MODIFIED="1720987828863" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="idea" COVERAGE_BY_TEST_ENABLED="false" COVERAGE_TRACING_ENABLED="true">
+      <FILTER>Pets.*</FILTER>
+    </SUITE>
   </component>
 </project>

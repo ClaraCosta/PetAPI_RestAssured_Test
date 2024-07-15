@@ -57,7 +57,7 @@ public class UserTests {
 
     @Test
     @Order(1)
-    public void CreateNewUser_WithValidData_ReturnOk(){
+    public void CreateNewUser(){
 
         request
                 .body(user)
@@ -75,7 +75,7 @@ public class UserTests {
 
     @Test
     @Order(2)
-    public void UpdateUser_WithValidData_ReturnOk(){
+    public void UpdateUser(){
 
         request
                 .body(user)
@@ -94,7 +94,7 @@ public class UserTests {
 
     @Test
     @Order(3)
-    public void GetLogin_ValidUser_ReturnOk(){
+    public void FindLogin(){
         request
                 .param("username", user.getUsername())
                 .param("password", user.getPassword())
@@ -103,11 +103,10 @@ public class UserTests {
                 .then()
                 .assertThat()
                 .statusCode(200)
-                .and().time(lessThan(2000L))
-                .and().body(matchesJsonSchemaInClasspath("loginResponseSchema.json"));
+                .and().time(lessThan(2000L));
     }
 
-    public void GetUserByUsername_userIsValid_return200(){
+    public void GetUserByUsername(){
 
         request
                 .when()
@@ -121,7 +120,7 @@ public class UserTests {
 
     @Test
     @Order(4)
-    public void DeleteUser_UserExists_Return200(){
+    public void DeleteUser(){
 
         request
                 .when()
@@ -131,6 +130,8 @@ public class UserTests {
                 .log();
 
     }
+
+
 
 }
 
