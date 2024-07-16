@@ -5,6 +5,11 @@ package Entities;
 import com.github.javafaker.FunnyName;
 import com.github.javafaker.Name;
 
+//==================================================================================================================
+//                                          | CLASS PET |
+//==================================================================================================================
+
+
 public class Pet {
 
     private String name;
