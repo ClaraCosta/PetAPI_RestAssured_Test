@@ -1,29 +1,34 @@
 package Pets;
 
 import Entities.Pet;
+import org.junit.jupiter.api.*;
 import com.github.javafaker.Faker;
 import io.restassured.RestAssured;
-import io.restassured.http.ContentType;
-import io.restassured.internal.path.json.JSONAssertion;
-import io.restassured.specification.RequestSpecification;
-import org.junit.jupiter.api.*;
-
-import static io.restassured.RestAssured.given;
-import static io.restassured.RestAssured.responseSpecification;
-import static io.restassured.config.LogConfig.logConfig;
-import static io.restassured.module.jsv.JsonSchemaValidator.matchesJsonSchemaInClasspath;
 import static org.hamcrest.Matchers.*;
+import io.restassured.http.ContentType;
+import static io.restassured.RestAssured.given;
+import io.restassured.internal.path.json.JSONAssertion;
+import static io.restassured.config.LogConfig.logConfig;
+import io.restassured.specification.RequestSpecification;
+import static io.restassured.RestAssured.responseSpecification;
+import static io.restassured.module.jsv.JsonSchemaValidator.matchesJsonSchemaInClasspath;
 
-//Permite setar a ordem dos testes a partir da tag de ordem
+
+//=================================================================================================================
+//Setando a ordem dos testes a partir da tag de ordem
+//
 //As tags que não possuem essa tag são executadas de forma sem prioridade
+//=================================================================================================================
 @TestMethodOrder(MethodOrderer.OrderAnnotation.class)
+
+//==================================================================================================================
+//                                                | PET TESTS |
+//==================================================================================================================
 
 public class PetTests {
 
     private static Pet pet;
-
     public static Faker faker;
-
     public static RequestSpecification request;
 
     @BeforeAll
@@ -32,14 +37,11 @@ public class PetTests {
         RestAssured.baseURI = "https://petstore.swagger.io/v2";
 
         faker = new Faker();
-
-        //Será executado antes de todos os testes
         // Responsável por gerar aleatoriamente informações do PET
         pet = new Pet(faker.funnyName());
 
     }
 
-    // Setar uma requisição antes de cada teste
     @BeforeEach
     void setRequest() {
         request = given().config(RestAssured.config().logConfig(logConfig().enableLoggingOfRequestAndResponseIfValidationFails()))
@@ -48,6 +50,12 @@ public class PetTests {
 
 
     }
+
+
+//==================================================================================================================
+//                                          | TESTES SEQUENCIAIS |
+//==================================================================================================================
+
     @Test
     @Order(1)
     public void AddNewPetInStore(){
