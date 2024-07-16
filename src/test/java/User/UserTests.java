@@ -1,25 +1,35 @@
 package User;
 
 import Entities.User;
+import org.junit.jupiter.api.*;
 import com.github.javafaker.Faker;
+import io.restassured.http.Header;
 import io.restassured.RestAssured;
+import static org.hamcrest.Matchers.*;
+import io.restassured.http.ContentType;
+import io.restassured.response.Response;
+import static io.restassured.RestAssured.given;
 import io.restassured.filter.log.ErrorLoggingFilter;
 import io.restassured.filter.log.RequestLoggingFilter;
 import io.restassured.filter.log.ResponseLoggingFilter;
-import io.restassured.http.ContentType;
-import io.restassured.http.Header;
-import io.restassured.response.Response;
-import io.restassured.specification.RequestSpecification;
-import org.junit.jupiter.api.*;
-
-import static io.restassured.RestAssured.given;
 import static io.restassured.config.LogConfig.logConfig;
+import io.restassured.specification.RequestSpecification;
 import static io.restassured.module.jsv.JsonSchemaValidator.matchesJsonSchemaInClasspath;
-import static org.hamcrest.Matchers.*;
 
-//Permite setar a ordem dos testes a partir da tag de ordem
+
+//=================================================================================================================
+//Setando a ordem dos testes a partir da tag de ordem
+//
 //As tags que não possuem essa tag são executadas de forma sem prioridade
+//=================================================================================================================
+
 @TestMethodOrder(MethodOrderer.OrderAnnotation.class)
+
+//==================================================================================================================
+//                                                | USER TESTS |
+//==================================================================================================================
+
+
 public class UserTests {
 
     private static User user;
@@ -35,8 +45,8 @@ public class UserTests {
 
             faker = new Faker();
 
-            //Será executado antes de todos os testes
-            // Responsável por setar as informações do usuário
+
+            // Responsável por gerar aleatoriamente informações do USER
             user = new User(faker.name().username(),
                     faker.name().firstName(),
                     faker.name().lastName(),
@@ -72,6 +82,12 @@ public class UserTests {
 
 
     }
+
+
+//==================================================================================================================
+//                                          | TESTES SEQUENCIAIS |
+//==================================================================================================================
+
 
     @Test
     @Order(2)
@@ -115,7 +131,6 @@ public class UserTests {
                 .assertThat().statusCode(200).and().time(lessThan(2000L))
                 .and().body("firstName", equalTo(user.getFirstName()));
 
-        // TO DO: Schema Validation
     }
 
     @Test
