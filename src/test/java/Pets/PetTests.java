@@ -34,7 +34,7 @@ public class PetTests {
         faker = new Faker();
 
         //Será executado antes de todos os testes
-        // Responsável por setar as informações do usuário aleatoriamente
+        // Responsável por gerar aleatoriamente informações do PET
         pet = new Pet(faker.funnyName());
 
     }
